@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-villvay" />
+        <module name="spring-boot-jwt" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-jwt" options="-parameters" />
       <module name="spring-boot-villvay" options="-parameters" />
     </option>
   </component>
